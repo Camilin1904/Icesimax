@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/IcesiMax.props" />
+</Project>

@@ -1,0 +1,60 @@
+@page "/students"
+@attribute [StreamRendering]
+
+<PageTitle>Students</PageTitle>
+
+<h1>Students</h1>
+
+
+@if (students == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Semester</th>   
+                <th>Carreer</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in students)
+            {
+                <tr>
+                    <td>@student.Code</td>
+                    <td>@student.Name</td>
+                    <td>@student.Semester</td>
+                    <td>@student.Carreer</td>
+                    <td><a href="/student/@student.Id"><button>Modify</button></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button>Create Student</button>
+}
+
+@code {
+    private Student[]? students;
+
+    public HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        students = await httpClient.GetFromJsonAsync<Student[]>("http://localhost:5190/Student");
+
+    }
+
+    private class Student
+    {
+        public int Id {get; set;}
+        public required string Code {get; set;}
+        public required string Name {get; set;}
+        public int Semester {get; set;}
+        public string? Carreer {get; set;}
+    }
+}

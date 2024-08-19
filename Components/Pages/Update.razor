@@ -1,0 +1,99 @@
+@page "/student/{id}"
+@attribute [StreamRendering]
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<PageTitle>Student</PageTitle>
+<script>
+    const  update = async()=>{  
+
+    const Id = $('#id').val();
+
+    const student = {'Id':Id, 'Code':$('#code').val(),'Name':$('#name').val(),'Semester':$('#sem').val(),'Carreer':$('#car').val()};
+
+    console.log(student);
+
+    const send = await fetch(`http://localhost:5190/Student/${Id}`, {
+    method: "PUT",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(student)
+
+    
+})
+ location.reload();
+
+};
+
+const  del = async()=>{  
+
+    const Id = $('#id').val();
+
+    const send = await fetch(`http://localhost:5190/Student/${Id}`, {
+    method: "DELETE",
+    headers: {
+        "Content-Type": "application/json"
+    },body:""})
+
+ window.location.href="/students";
+
+};
+</script>
+<h1>Student</h1>
+@if(student == null)
+{
+    <p><em>Loading...</em></p>
+}
+else{
+     <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Semester</th>   
+                <th>Carreer</th>
+                <th>Options</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id="id" readonly type="text" value="@student.Id"></td>
+                <td><input id="code" type="text" value="@student.Code"></td>
+                <td><input id="name" type="text" value="@student.Name"></td>
+                <td><input id="sem" type="text" value="@student.Semester"></td>
+                <td><input id="car" type="text" value="@student.Carreer"></td>
+                
+                <td><button onclick="update()">Send</button></td>
+                 <td><button onclick="del()" style="color:crimson">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+    [Parameter]
+    public string? Id { get; set;}
+
+    private Student? student;
+
+    public HttpClient httpClient = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        student  = await httpClient.GetFromJsonAsync<Student>($"http://localhost:5190/Student/{Id}");
+
+    }
+
+    private class Student
+    {
+        public int Id {get; set;}
+        public required string Code {get; set;}
+        public required string Name {get; set;}
+        public int Semester {get; set;}
+        public string? Carreer {get; set;}
+    }
+}

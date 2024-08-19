@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IcesiMax
+build_property.RootNamespace = IcesiMax
+build_property.ProjectDir = /home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Pages/Add.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZGQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Pages/Students.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9TdHVkZW50cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Pages/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9VcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-brfb4lzp1e
+
+[/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wgft07bjmx
