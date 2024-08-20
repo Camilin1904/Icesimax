@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IcesiMax")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+876298c45f571445803e443f855a68195a463673")]
 [assembly: System.Reflection.AssemblyProductAttribute("IcesiMax")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IcesiMax")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

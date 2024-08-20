@@ -3,25 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <PageTitle>Student</PageTitle>
-<script>
-    const create = async()=>{  
 
-    const student = {'Code':$('#code').val(),'Name':$('#name').val(),'Semester':$('#sem').val(),'Carreer':$('#car').val()};
-
-    const send = await fetch(`http://localhost:5190/Student`, {
-    method: "POST", 
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(student)
-
-    
-})
-  window.location.href="/students";
-
-};
-
-</script>
 <h1>Student</h1>
      <table class="table">
         <thead>

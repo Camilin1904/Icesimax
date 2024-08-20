@@ -27,3 +27,4 @@
 /home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/obj/Debug/net8.0/IcesiMax.pdb
 /home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/obj/Debug/net8.0/IcesiMax.genruntimeconfig.cache
 /home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/obj/Debug/net8.0/ref/IcesiMax.dll
+/home/camilin/Documents/Icesi/Compunet 3/c sharp presentation/IcesiMax/obj/Debug/net8.0/IcesiMax.sourcelink.json

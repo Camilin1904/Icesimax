@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IcesiMax", "IcesiMax.csproj", "{71171466-3A8B-462C-8B4C-95F0F976AE99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IcesiMax", "IcesiMax.csproj", "{6C1BE6C5-8473-4078-8675-39FE9E8F0860}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{71171466-3A8B-462C-8B4C-95F0F976AE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71171466-3A8B-462C-8B4C-95F0F976AE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71171466-3A8B-462C-8B4C-95F0F976AE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71171466-3A8B-462C-8B4C-95F0F976AE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1BE6C5-8473-4078-8675-39FE9E8F0860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1BE6C5-8473-4078-8675-39FE9E8F0860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1BE6C5-8473-4078-8675-39FE9E8F0860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1BE6C5-8473-4078-8675-39FE9E8F0860}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

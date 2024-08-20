@@ -1,44 +1,8 @@
 @page "/student/{id}"
 @attribute [StreamRendering]
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <PageTitle>Student</PageTitle>
-<script>
-    const  update = async()=>{  
 
-    const Id = $('#id').val();
-
-    const student = {'Id':Id, 'Code':$('#code').val(),'Name':$('#name').val(),'Semester':$('#sem').val(),'Carreer':$('#car').val()};
-
-    console.log(student);
-
-    const send = await fetch(`http://localhost:5190/Student/${Id}`, {
-    method: "PUT",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(student)
-
-    
-})
- location.reload();
-
-};
-
-const  del = async()=>{  
-
-    const Id = $('#id').val();
-
-    const send = await fetch(`http://localhost:5190/Student/${Id}`, {
-    method: "DELETE",
-    headers: {
-        "Content-Type": "application/json"
-    },body:""})
-
- window.location.href="/students";
-
-};
-</script>
 <h1>Student</h1>
 @if(student == null)
 {

@@ -1,0 +1,16 @@
+@page "/forceloader/{navigationUrl}"
+
+@code {
+
+    [Parameter]
+    public string navigationUrl { get; set; }
+
+
+    [Inject] private NavigationManager _navigationManager { get; set; }
+    protected override void OnInitialized()
+    {
+        Console.WriteLine(navigationUrl);
+        _navigationManager.NavigateTo(navigationUrl);
+    }
+
+}
